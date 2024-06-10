@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Welcome to apple App")
 from PIL import Image
-img = Image.open("C:/Users/hetvi/OneDrive/Desktop/python code/apple quality.jpg")
+img = Image.open("apple quality.jpg")
 
 st.image(img, width=200)
 
