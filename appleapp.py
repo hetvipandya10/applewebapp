@@ -15,8 +15,9 @@ R=st.slider("Select Ripeness=",-5.8,7.2)
 A=st.slider("Select Acidity=",-7.0,7.4)
 
 import pickle
-model=pickle.load(open("Apple.pkl","rb"))
+
 if st.button("Predict"):
+    model=pickle.load(open("Apple.pkl","rb"))
     prd=model.predict([[S,W,SW,C,J,R,A]])
     st.success("The Apple Quality is "+ str(prd[0]))
 
